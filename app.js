@@ -40,7 +40,7 @@ function randomString(string){
 };
 
 app.post("/", async(req,res) => {
-    const {operation, x, y} = await req.body;
+    const {operation_type : operation, x, y} = await req.body;
     // console.log(operation, x, y)
     let result;
     try {
